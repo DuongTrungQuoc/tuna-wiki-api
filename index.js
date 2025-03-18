@@ -75,7 +75,9 @@ app.get("/v1", (req, resp) => {
               //  split ["/wiki", "/Albacore"]
               thumbnails.push({
                 name: name,
-                url: "http://localhost:8000/v1" + url.split("/wiki")[1],
+                url:
+                  "https://tuna-wiki-api.onrender.com/v1" +
+                  url.split("/wiki")[1],
                 image: `https:${image}`,
                 status: status,
                 status_icon: `https:${status_icon}`,
